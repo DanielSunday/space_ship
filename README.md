@@ -1,5 +1,6 @@
 A lunar lander kind-of clone. Just without landing anything.
 
+![Gameplay](http://i.giphy.com/d3MM4YNV4ClPBRKw.gif)
 ## How to install
 
 First, install the dependencies
