@@ -1,0 +1,21 @@
+#version 330 core
+
+layout (location = 0) in vec2 scrpos;
+layout (location = 1) in vec2 texpos;
+
+out vec2 texpos0;
+
+uniform vec2 scl, rot, mov;
+
+vec2 newpos, oldpos;
+
+void main(void)
+{
+    newpos = oldpos = scrpos;
+    newpos.x = oldpos.x * rot.y - oldpos.y * rot.x;
+    newpos.y = oldpos.x * rot.x + oldpos.y * rot.y;
+    newpos *= scl;
+    newpos += mov;
+    gl_Position = vec4(newpos.x, newpos.y, 0, 1);
+    texpos0 = texpos;
+}
