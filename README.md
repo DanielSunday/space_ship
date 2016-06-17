@@ -5,7 +5,7 @@ A lunar lander kind-of clone. Just without landing anything.
 
 First, install the dependencies
 
-`sudo apt-get install build-essential libglew-dev libglfw3-dev portaudio19-dev libsndfile1`
+`sudo apt-get install build-essential libglew-dev libglfw3-dev portaudio19-dev libsndfile1-dev`
 
 If you had trouble with this try
 
